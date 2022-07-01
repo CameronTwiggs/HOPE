@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>WebSite Development</title>
+	<link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    
+
+<div class="main_container" id="home">
+	
+    <!-- Company name & navbar -->
+	<section class="navbar">
+		<div class="logo">
+			<a href="#">HOPE</a>
+		</div>
+		<div class="navbar_items" id="navbar_id">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#services">services</a></li>
+				<li><a href="#contactus">contact</a></li>
+				<li><a href="#ourteam">our team</a></li>
+			</ul>
+		</div>
+	</section>
+
+    <!-- Center text in hero image -->
+	<section class="banner_image">
+		<div class="banner_content" id="banner_id">
+			<h1>Only I can change my life.<br> <span>No one can do it for me.<span></h1>
+		</div>	
+	</section>
+
+    <!-- About section -->
+	<section class="about" id="about">
+		<h1 class="title">About Us</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, eveniet temporibus reprehenderit. Veniam sunt corrupti necessitatibus quam, quia doloribus nesciunt ut eveniet, alias aspernatur eum perferendis commodi doloremque recusandae tenetur quis cumque voluptatibus officiis ea excepturi dignissimos! Repellat molestias iusto dicta facere ipsum, harum maiores illum laborum tenetur? Explicabo, cupiditate!</p>
+		<div class="btn"><a href="#">Learn More</a></div>
+    </section>
+
+    <!-- Services we provide -->
+	<section class="services" id="services">
+		<h1 class="title">our Services</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quia, porro repellendus dolore repudiandae, accusantium corporis harum vel iste suscipit maiores provident ullam itaque libero minus nesciunt consequatur iusto numquam asperiores quod fugiat veniam blanditiis.</p>
+		<div class="diff_services">
+
+            <!-- service 1 -->
+			<div class="diff_services_item">
+				<img src="images/services-1.png" alt="service_image">
+				<h3 class="sub_title">Web Development</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+
+            <!-- service 2 -->
+			<div class="diff_services_item">
+				<img src="images/services-2.png" alt="service_image">
+				<h3 class="sub_title">App Development</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+
+            <!-- service 3 -->
+			<div class="diff_services_item">
+				<img src="images/services-3.png" alt="service_image">
+				<h3 class="sub_title">PSD to HTML</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</section>
+
+    <!-- contact section -->
+	<section class="contactus" id="contactus">
+		<h1 class="title">contact us</h1>
+		<div class="form_wrapper">
+
+            <!-- email input -->
+			<div class="form_input">
+				<input type="text" placeholder="Email">
+			</div>
+
+            <!-- subject input -->
+			<div class="form_input">
+				<input type="text" placeholder="Subject">
+			</div>
+
+            <!-- message input -->
+			<div class="form_input">
+				<textarea placeholder="Message"></textarea>
+			</div>
+
+            <!-- submit button -->
+			<div class="btn">
+				<a href="#">Submit</a>
+			</div>
+		</div>
+	</section>
+
+    <!-- members of the team -->
+	<section class="ourteam" id="ourteam">
+		<h1 class="title">Our Team</h1>
+		<div class="ourteam_wrapper">
+
+            <!-- first row with LinkedIn links (Bellul & Cam) -->
+			<div class="team-1 team">
+				<div class="team_members"><a href="https://www.linkedin.com/in/bemmanuel/" target="_blank"><img src="teamPhotos/PhotoBellul.jpeg" alt="Team_Image"></div></a>
+				<div class="team_members"><a href="https://www.linkedin.com/in/camerontwiggs/" target="_blank"><img src="teamPhotos/PhotoCam.jpeg" alt="Team_Image"></div></a>
+			</div>
+
+            <!-- second row with LinkedIn links (Kesu & Peter) -->
+            <div class="team-2 team">
+				<div class="team_members"><a href="https://www.linkedin.com/in/tsiniate-endalkachew/" target="_blank"><img src="teamPhotos/PhotoKesu.jpeg" alt="Team_Image"></div></a>
+				<div class="team_members"><a href="https://www.linkedin.com/in/p-moua/" target="_blank"><img src="teamPhotos/PhotoPeter.jpeg" alt="Team_Image"></div></a>
+			</div>
+		</div>
+	</section>	
+
+    <!-- footer -->
+	<div class="footer">
+		<a href="#">© 2022 HOPE</a>
+	</div>
+</div>	
+	
 </body>
 </html>
