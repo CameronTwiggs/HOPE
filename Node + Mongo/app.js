@@ -65,4 +65,3 @@ async function listDatabases(client){
         console.log(`- ${db.name}`);
     });
 };
-
