@@ -1,0 +1,58 @@
+/* set layout & background color */
+body {
+    margin: 0;
+    padding: 0;
+    background: #e84118;
+}
+
+/* properties of search box */
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* on hover, opens up search button left & right instead of only right */
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+/* opens up search button for user input on hover */
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+/* When hover on button, button changes background color */
+.search-box:hover > .search-btn {
+    background: white;
+}
+
+/* properties of search button */
+.search-btn {
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+/* properties of user search input */
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
