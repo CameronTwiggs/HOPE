@@ -21,3 +21,4 @@ const imgchange = () => {
 }
 setInterval(imgchange, 15000);
  imgchange();
+
