@@ -1,7 +1,7 @@
 // create an express app
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 3000;
 const cors = require("cors")
 // starts express server
 app.use(cors());
