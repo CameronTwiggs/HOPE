@@ -1,22 +1,23 @@
+const MongoClient = require('mongodb').MongoClient;
 const cors = require("cors")
+// starts express server
 const express = require('express');
-const mongoose = require('mongoose');
-
-
 const app = express();
-const PORT = process.env.PORT || 8080;
+const port = process.env.PORT|| 8080;
+
 app.use(cors());
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/hopehacks", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+app.listen(port, () => console.log(`Listening on port ${port}`));
 
-mongoose.connection.on("connected", () => {
-    console.log("connected to mongo instance :D :D :D :D :D ");
-});
-
-
-app.listen(PORT, () => {
-    console.log(`listening on port ${PORT}`);
+MongoClient.connect(process.env.MONGODB_URI || "mongodb+srv://nerd:AwwTlVLJg1QVUlqg@rude-buster.g9uqnpz.mongodb.net/?retryWrites=true&w=majority" , { useNewUrlParser: true }, (err, client) => {
+    console.log("Connected to database");
+    const db = client.db('sample_training');
+    const collection = db.collection('routes');
+   
+    app.get('/', (req, res) => {
+        collection.find().toArray()
+        .then (docs => {
+            res.send(docs);
+        });
+    });
 });
