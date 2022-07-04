@@ -1,6 +1,4 @@
 const {MongoClient, ObjectID} = require('mongodb');
-const mongoUser = encodeURIComponent('JohnHope');
-const mongoPass = encodeURIComponent('kjpKtE5zwFPt7H2WFzQ4UENjxuDPvfQuKT3');
 
 let names = ['John', 'Joe', 'Jill', 'Jack', 'Jane'];
 
@@ -23,7 +21,7 @@ app.get('/', (req, res) => {
 
 async function main() {
 
-    const uri = `mongodb+srv://${mongoUser}:${mongoPass}@hopehacksdatabase.gzz69bj.mongodb.net/?retryWrites=true&w=majority`;
+    const uri = ``;
     const client = new MongoClient(uri);
 
     try {

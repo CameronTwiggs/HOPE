@@ -9,7 +9,7 @@ app.use(cors());
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-MongoClient.connect(process.env.MONGODB_URI || "mongodb+srv://nerd:AwwTlVLJg1QVUlqg@rude-buster.g9uqnpz.mongodb.net/?retryWrites=true&w=majority" , { useNewUrlParser: true }, (err, client) => {
+MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, client) => {
     console.log("Connected to database :D :D :D :D ");
     const db = client.db('sample_training');
     const collection = db.collection('routes');

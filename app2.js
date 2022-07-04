@@ -1,8 +1,6 @@
 // connects to mongoDB and inserts a document
 const MongoClient = require('mongodb').MongoClient;
-const mongoUser = encodeURIComponent('JohnHope');
-const mongoPass = encodeURIComponent('kjpKtE5zwFPt7H2WFzQ4UENjxuDPvfQuKT3');
-const uri = `mongodb+srv://${mongoUser}:${mongoPass}@hopehacksdatabase.gzz69bj.mongodb.net/?retryWrites=true&w=majority`;
+
 const cors = require("cors")
 // starts express server
 const express = require('express');
