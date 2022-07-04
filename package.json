@@ -7,5 +7,23 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.18"
-  }
+  },
+  "name": "hope",
+  "description": "Road To Hire H.O.P.E projects",
+  "version": "1.0.0",
+  "main": "app2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CameronTwiggs/HOPE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CameronTwiggs/HOPE/issues"
+  },
+  "homepage": "https://github.com/CameronTwiggs/HOPE#readme"
 }
