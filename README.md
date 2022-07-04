@@ -61,3 +61,8 @@ Notes go here
 
 ### Frontend/3rdAPI - Amplify (Kesu & Peter)
 Notes go here
+
+### Misc Notes
+
+[Live Site](https://main.dmaslsmzlhbs2.amplifyapp.com/)
+[Backend Endpoint : https://hopehacksapi.herokuapp.com/](https://hopehacksapi.herokuapp.com/)
