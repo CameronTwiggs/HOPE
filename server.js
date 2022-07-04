@@ -1,26 +1,22 @@
-// connects to mongoDB and inserts a document
-const MongoClient = require('mongodb').MongoClient;
 const cors = require("cors")
 const express = require('express');
+const mongoose = require('mongoose');
 
 
 const app = express();
-const port = 8080;
-
+const PORT = process.env.PORT || 8080;
 app.use(cors());
-app.listen(process.env.PORT || 8080, () => console.log(`Listening on port ${port}`));
 
-MongoClient.connect(process.env.MONGODB_URI, { useNewUrlParser: true }, (err, client) => {
-    console.log("Connected to database");
-    const db = client.db('hopehacks');
-    const collection = db.collection('listings');
-   
-    app.get('/', (req, res) => {
-        collection.find().toArray()
-        .then (docs => {
-            res.send(docs);
-        }
-        )
-    }    
-    );
-})
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/hopehacks", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
+
+mongoose.connection.on("connected", () => {
+    console.log("connected to mongo instance :D :D :D :D :D ");
+});
+
+
+app.listen(PORT, () => {
+    console.log(`listening on port ${PORT}`);
+});
