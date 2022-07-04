@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root{
+--color: #333; 
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  width: 100%;
+    height: 108vh;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+header{
+  position: relative;
+  width: 85%;
+  height: 85%;
+  border: 2px solid #fff;
+/*   background: url('freeBR3.jpg')no-repeat center center/cover;
+  transition: all 1s ease-in-out; */
+}
+
+header nav{
+  width: 90%;
+  height: 9%;
+  margin: auto;
+/*   border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav h3{
+  color: gray;
+  font-size: 24px; 
+  font-family: fantasy;
+   text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+}
+header nav h3 span{
+  color: gray;
+  font-size: 40px; 
+  font-family: fantasy;
+}
+header nav h3 span{
+  color: #fff;
+}
+header nav ul{
+  width: auto;
+  height: 100%;
+/*   border: 1px solid #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+/*   border: black;
+  transform: uppercase; */
+}
+header nav ul li{
+  list-style-type: none;
+  padding: 3px 10px;
+}
+header nav ul li a{
+  text-decoration: none;
+   color: #fff;
+  font-family: "system-ui";
+  font-size: 11px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+/*   justify-content: space-between; */
+   text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
+}
+header nav ul li a:hover{
+  color: gray;
+}
+header nav .menu{
+  width: 30px;
+  height: 100%;
+/*   border: 1px solid #fff; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 13px;
+}
+header nav .menu span{
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  margin: 2px 0px;
+  border-radius: 10px;
+  cursor: not-allowed;
+}
+header nav .menu span:nth-child(2){
+  width: 25px;
+  height: 3px;
+}
+header nav .menu span:nth-child(3){
+  width: 20px;
+  height: 2px;
+}
+
+
+.container.middle_sec h3{
+  font-size: 24px; 
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  
+}
+.container middle_sec h1{
+  font-size: 50px; 
+  font-weight: 900;
+  line-height: 50px;
+   color: #fff;
+}
+
+.holder {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/aboutusimg/stand.jpg");
+/*   background-image: url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"); */
+  background-size: cover;
+  background-position: center;
+  
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+}
+
+
+
+a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.blank,
+.other {
+  width: 100%;
+  min-height: 30vh;
+  background-color: var(--color);
+}
+
+.second {
+  background-image: url("../images/aboutusimg/vote.jpg");
+/*   background-image:url("https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.display > a {
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;;
+}
+
+.img-first {
+  background-image: url("../images/aboutusimg/demand.jpeg");
+}
+
+.img-second {
+  background-image: url("../images/aboutusimg/legislation.jpeg");
+}
+
+.img-third {
+  background-image: url("../images/aboutusimg/representatives.jpeg");
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+/* html, body {
+  height: 100%;
+  width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+main h1{
+    position: absolute;
+    font-size: 5rem;
+    right: -30%;
+    top: 50%;
+    z-index: 120;
+    color: white;
+    text-transform: uppercase;
+}
+main img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+}
+
+#mountain_1{
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: auto;
+}
+
+.text {
+    padding: 2rem;
+    text-align: center;
+    background-color: #9e9e9e;
+    color: black;
+}
+h3{
+    font-size: 2.5rem;
+} */
+
+
+
+
+
+section {
+    position: relative;
+}
+
+/* pink circle properties */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+/*     background: linear-gradient(#f00,#f0f); */
+    clip-path: circle(30% at right 70%);
+}
+
+/* blue circle properties */
+section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+/*     background: linear-gradient(#2196f3,#e91e63); */
+    clip-path: circle(20% at 10% 10%);
+}
+
+/* allows cards to display flex, also prevents blue circle from overlapping cards */
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+/* properties of the cards which hold all other items */
+.container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+/* centers all items in the card, except social media buttons */
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* photo image & name & description, transition effect on hover */
+.container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+/* circle border for photo image */
+.container .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+}
+
+/* centers photo for proper image */
+.container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* properties for names and descriptions */
+.container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+/* font of descriptions */
+.container .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+/* places social media buttons below description */
+.container .card .sci {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+/* properties of social media buttons */
+.container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s; 
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+/* brings up the social media buttons */
+.container .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* font size and color of social media buttons */
+.container .card .sci li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+/* hover color on social media buttons */
+.container .card .sci li a:hover {
+    color: #2b2b2b;
+}
