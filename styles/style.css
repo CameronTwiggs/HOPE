@@ -8,6 +8,7 @@ html, body {
     box-sizing: border-box
  }
 
+/* set the body to align our content centered */
 body{
     width: 100%;
     height: 108vh;
@@ -16,14 +17,16 @@ body{
     align-items: center;
     justify-content: center; 
 }
+/* set our box and outline */
 header{
   position: relative;
   width: 85%;
   height: 85%;
   border: 2px solid #fff;
-  background: url('freeBR3.jpg')no-repeat center center/cover;
+  background: url('../images/homeimg/freeBR3.jpg') no-repeat center center/cover;
   transition: all 1s ease-in-out;
 }
+/* positioning of our nav outline*/
 header nav{
   width: 90%;
   height: 9%;
@@ -36,10 +39,19 @@ header nav{
 
 header nav h3{
   color: gray;
-  font-size: 11px; 
+  font-size: 24px; 
   font-family: fantasy;
+   text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
 }
-header nav h3{
+header nav h3 span{
   color: gray;
   font-size: 40px; 
   font-family: fantasy;
@@ -48,7 +60,7 @@ header nav h3 span{
   color: #fff;
 }
 header nav ul{
-  width: 30%;
+  width: auto;
   height: 100%;
 /*   border: 1px solid #fff; */
   display: flex;
@@ -69,22 +81,32 @@ header nav ul li a{
   font-weight: bold;
   transition: all .3s ease-in-out;
 /*   justify-content: space-between; */
+   text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
 }
 header nav ul li a:hover{
   color: gray;
 }
 header nav .menu{
-  width: 40px;
+  width: 30px;
   height: 100%;
 /*   border: 1px solid #fff; */
   display: flex;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
   padding-top: 13px;
 }
 header nav .menu span{
   width: 30px;
-  height: 40px;
+  height: 4px;
   background: #fff;
   margin: 2px 0px;
   border-radius: 10px;
@@ -126,9 +148,10 @@ header section .sec1,.sec2,.top_sec{
 }
 header section .sec1,.sec2,.top_sec h5{
   color: #fff;
-  font-size: 9px;
+  font-size: 21px;
   font-weight: 600;
-  line-height: 10px;
+  line-height: 1rem;
+  
 }
 header section .sec1 .top_sec a{
   color: #fff;
@@ -157,7 +180,7 @@ header section .sec1 .middle_sec{
   color: #fff;
 }
 header section .sec1 .middle_sec h3{
-  font-size: 12px; 
+  font-size: 24px; 
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -170,7 +193,7 @@ header section .sec1 .end1{
 /*  border: 1px solid #fff; */
   margin-top: 50px;
 }
-header section .sec1 .bx{
+header section .sec1 .end1 .bx{
 position: relative;
   width: 130px;
   height: 70px;
@@ -213,12 +236,13 @@ header section .sec1 .end2{
 /*   border: 1px solid #fff; */
   display: flex; 
   width: 100px;
+  
   align-items: center;
   justify-content: space-between;
 }
 header section .sec1 .end2 li{
   list-style-type: none;
-/*   padding: 5px 25px 5px 0px; */
+  padding: 5px 10px 5px 0px;
   transition: all 3s ease-in-out;
   
 }
@@ -256,7 +280,12 @@ header section .sec2 .second h5{
 font-size: 18px;
   text-align: end;
   margin-top: 30px;
-  line-height:1rem;
+  line-height: 2rem;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
   
 }
 header section .sec2 .second h5 span{
@@ -295,7 +324,7 @@ header section .sec2 .third h5 span{
 header .last_bx{
   position: absolute;
   width: 70%;
-  height: 60px;
+  height: 30px;
   background: #2b2b2b;
   right: -20px;
   bottom: -25px;
@@ -311,7 +340,8 @@ header .last_bx li{
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all .1s ease-in-out;
+  
 }
 header .last_bx li:hover{
  color: grey;
