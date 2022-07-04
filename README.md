@@ -19,14 +19,13 @@ Lets start things all the way from the top,
 
 ## To-Do List
 
-- [ ] Database
-    - [ ] Hosted?
-    - [ ] Connected to backend?
-    - [ ] File Sturcture
+- [x] Database
+    - [x] Hosted?
+    - [x] Connected to backend? 
 - [ ] Backend
-    - [ ] Hosted?
-    - [ ] Connected to database?
-    - [ ] Connected to frontend?
+    - [x] Hosted?
+    - [x] Connected to database?
+    - [x] Connected to frontend?
     - [ ] CRUD Implamentation
     - [ ] File Sturcture
 - [ ] Frontend
@@ -35,13 +34,13 @@ Lets start things all the way from the top,
     - [ ] API Digest formated
     - [ ] Database Queries
     - [ ] BEM?
-    - [ ] File Sturcture
+    - [x] File Sturcture
 - [ ] 3rd Party API
-    - [ ] Key Access?
+    - [x] Key Access?
     - [ ] into database?
     - [ ] Displaying Properly into Frontend
 - [ ] 1st Party API
-    - [ ] Connected to database
+    - [x] Connected to database
     - [ ] Can anyone use it?
 
 The way we have the project layed out goes as follows.
