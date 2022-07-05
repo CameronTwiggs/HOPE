@@ -16,8 +16,8 @@
         </nav>
     </header>
     <h1>Representatives</h1>
-    <form action="https://hopehacksapi.herokuapp.com/personSearch" method="POST">
-        <input type="text" value="name" placeholder="Search by a name!">
+    <form action="https://hopehacksapi.herokuapp.com/personSearch/" method="POST">
+        <input type="text" value="name" name="name" placeholder="Search by a name!">
         <select>
             <option value=""> -- </option>
             <option value="AL">Alabama</option>
@@ -72,7 +72,7 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
         </select>
-        <input type="submit" value="Submit">
+        <input type="submit" value="OK">
     </form>
 </body>
 <script src="../scripts/api.js"></script>
