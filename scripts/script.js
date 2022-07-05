@@ -1,7 +1,10 @@
+// setting var's equal to our elements we are making active
 const bg = document.getElementById('header');
 const counts = document.getElementById('counts');
 const line = document.getElementById('line'); 
 
+// once clicked we will change our headers background by dividing our height in three and counting out the inner text
+// finally set the actual timer min and max
 const imgchange = () => {
   setTimeout(() => {
     bg.style.background = "url('./images/homeimg/freeBR2.jpg')no-repeat center center/cover";
