@@ -52,7 +52,7 @@ app.get('/personSearch', (req, res) => {
     console.log(req.query);
     console.log(req.params);
     console.log(req.headers);
-    res.setheader(200("OK"));
+    res.send("Hello World");
 });
 
 app.post("/personSearch", (req, res) => {
@@ -60,5 +60,5 @@ app.post("/personSearch", (req, res) => {
     console.log(req.query);
     console.log(req.params);
     console.log(req.headers);
-    res.setheader(200("OK"));
+    res.end();
 });
