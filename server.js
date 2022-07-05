@@ -11,8 +11,8 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, client) => {
     console.log("Connected to database :D :D :D :D ");
-    const db = client.db('sample_training');
-    const collection = db.collection('routes');
+    const db = client.db('hopehacks');
+    const collection = db.collection('listings');
    
     app.get('/', (req, res) => {
         collection.find().toArray()
