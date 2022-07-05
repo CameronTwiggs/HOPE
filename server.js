@@ -16,16 +16,16 @@ headers: {
 }
 
 
-async function searchPerson(name, jurs) {
-    try {
-        const data = await fetch(`https://v3.openstates.org/people?jurisdiction=${jurs}&name=${name}&page=1&per_page=10`, thirdPartyOptions);
-        const json = await data.json();
-        console.log(json);
-        res.send(json);
-    } catch (error) {
-        console.log(error);
-    }
-}
+// async function searchPerson(name, jurs) {
+//     try {
+//         const data = await fetch(`https://v3.openstates.org/people?jurisdiction=${jurs}&name=${name}&page=1&per_page=10`, thirdPartyOptions);
+//         const json = await data.json();
+//         console.log(json);
+//         res.send(json);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -49,6 +49,6 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 
 app.post('/personSearch', (req, res) => {
     console.log(req.body);
-    searchPerson(req.body.name, req.body.jurs);
+    // searchPerson(req.body.name, req.body.jurs);
 });
 
