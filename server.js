@@ -8,8 +8,10 @@ const app = express();
 const port = process.env.PORT|| 8080;
 
 const thirdPartyOptions = {
-    header: {
-        "x-api-key": process.env.APIKEY,
+headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        "X-API-KEY" : process.env.APIKEY
     }
 }
 
