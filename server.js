@@ -14,12 +14,19 @@ headers: {
         'Content-Type': 'application/json',
         "access-control-allow-origin": "*",
         'Accept': 'application/json',
-        "X-API-KEY" : process.env.APIKEY
+        "X-API-KEY" : process.env.openStatesKey
     }
 }
 
-
-
+const proPublicAPIOptions = {
+    headers: {
+            'Content-Type': 'application/json',
+            "access-control-allow-origin": "*",
+            'Accept': 'application/json',
+            "X-API-KEY" : process.env.proPublicKey
+        }
+}
+        
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -52,3 +59,30 @@ app.get('/personSearch', (req, res) => {
         res.send(data);
     })
 });
+
+
+
+app.get('/personSearch', (req, res) => {
+    const obj = req.query
+    console.log(obj);
+    fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=${obj.page}&per_page=10`, openStatesAPIOptions)
+    .then (res => res.json())
+    .then (data => {
+        console.log(data)
+        res.send(data);
+    })
+});
+
+
+app.get('/billSearch', (req, res) => {
+    console(req.query);
+    console(req.body);
+    console(req.params);
+    const obj = req.query
+    fetch("https://api.propublica.org/congress/v1/bills/search.json?query=nerd", proPublicAPIOptions)
+    .then (res => res.json())
+    .then (data => {
+        console.log(data)
+        res.send(data);
+    })
+})
