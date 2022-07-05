@@ -9,7 +9,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT|| 8080;
 
-const thirdPartyOptions = {
+const openStatesAPIOptions = {
 headers: {
         'Content-Type': 'application/json',
         "access-control-allow-origin": "*",
@@ -45,7 +45,7 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 app.get('/personSearch', (req, res) => {
     const obj = req.query
     console.log(obj);
-    fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=${obj.page}&per_page=10`, thirdPartyOptions)
+    fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=${obj.page}&per_page=10`, openStatesAPIOptions)
     .then (res => res.json())
     .then (data => {
         console.log(data)
