@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center; 
 }
+/* set our box and outline to match*/
 header{
   position: relative;
   width: 85%;
@@ -21,7 +22,7 @@ header{
 /*   background: url('freeBR3.jpg')no-repeat center center/cover;
   transition: all 1s ease-in-out; */
 }
-
+/* positioning of our nav outline*/
 header nav{
   width: 90%;
   height: 9%;
@@ -54,6 +55,7 @@ header nav h3 span{
 header nav h3 span{
   color: #fff;
 }
+/* make nav bar aligned to center */
 header nav ul{
   width: auto;
   height: 100%;
@@ -64,10 +66,12 @@ header nav ul{
 /*   border: black;
   transform: uppercase; */
 }
+/* how our tabs are spaced */
 header nav ul li{
   list-style-type: none;
   padding: 3px 10px;
 }
+/* our nav tabs sizing as well as shadow to make more visible, set our transition  */
 header nav ul li a{
   text-decoration: none;
    color: #fff;
@@ -86,9 +90,12 @@ header nav ul li a{
         0.05em -0.05em black,
         0.05em 0.05em black;
 }
+/* hover color effect */
 header nav ul li a:hover{
   color: gray;
 }
+
+/* setour area for our menu bar */
 header nav .menu{
   width: 30px;
   height: 100%;
@@ -99,6 +106,8 @@ header nav .menu{
   flex-direction: column;
   padding-top: 13px;
 }
+
+/* divides our menu button by targeting span */
 header nav .menu span{
   width: 30px;
   height: 4px;
@@ -107,6 +116,7 @@ header nav .menu span{
   border-radius: 10px;
   cursor: not-allowed;
 }
+/* set our different lines in menu tab */
 header nav .menu span:nth-child(2){
   width: 25px;
   height: 3px;
@@ -116,21 +126,21 @@ header nav .menu span:nth-child(3){
   height: 2px;
 }
 
-
-.container.middle_sec h3{
+/* make our main title, then the second should pop out a little more */
+.container .middle_sec h3{
   font-size: 24px; 
   font-weight: 600;
   letter-spacing: 2px;
   color: #fff;
   
 }
-.container middle_sec h1{
+.container .middle_sec h1{
   font-size: 50px; 
   font-weight: 900;
   line-height: 50px;
    color: #fff;
 }
-
+/* containing our first parrallax, keep background position displayed center using flex and set it to cover for tranisiton */
 .holder {
   text-align: center;
   color: var(--color);
@@ -149,18 +159,31 @@ header nav .menu span:nth-child(3){
   background-attachment: fixed;
 }
 
+/* main title */
 h1 {
   font-weight: 700;
   font-size: 3rem;
   color: #fff;
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 
-
-a {
+/* causing some problems but targets the link and text styles */
+.cardBT {
   display: inline-block;
   padding: 1em 3.5em;
-  background-color: var(--color);
+  background-color:#2D82B7;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -169,14 +192,27 @@ a {
   letter-spacing: .5px;
   font-size: .875rem;
 }
-
+.cardBT2 {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color:#FF6663;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+/* this is the empty space we set in between our slide down the site */
 .blank,
 .other {
   width: 100%;
   min-height: 30vh;
   background-color: var(--color);
 }
-
+/* 
+lets set our second parrallax */
 .second {
   background-image: url("../images/aboutusimg/vote.jpg");
 /*   background-image:url("https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
@@ -184,16 +220,18 @@ a {
   height: 1200px;
 }
 
-h3 {
+/* h3 {
   font-weight: 700;
   font-size: 1.6rem;
   margin-top: 1em;
-}
+} */
 
+/* target the direct children of the a element  */
 .display > a {
   margin-bottom: 2em;
 }
 
+/* lets set up our indivdual item card to evenly line up and add shadows to make visibile */
 .item {
   display: flex;
   max-width: 320px;
@@ -206,6 +244,7 @@ h3 {
   box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
 }
 
+/* image inside of itme needs to be cover and center to be seen */
 .img {
   width: 90%;
   height: 200px;
@@ -216,6 +255,8 @@ h3 {
   border-radius: .3em;;
 }
 
+
+/* set the image for all of our cards */
 .img-first {
   background-image: url("../images/aboutusimg/demand.jpeg");
 }
@@ -233,55 +274,6 @@ h3 {
   gap: 1.6em;
 }
 
-/* html, body {
-  height: 100%;
-  width: 100%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-main{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-main h1{
-    position: absolute;
-    font-size: 5rem;
-    right: -30%;
-    top: 50%;
-    z-index: 120;
-    color: white;
-    text-transform: uppercase;
-}
-main img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 5;
-}
-
-#mountain_1{
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    height: auto;
-}
-
-.text {
-    padding: 2rem;
-    text-align: center;
-    background-color: #9e9e9e;
-    color: black;
-}
-h3{
-    font-size: 2.5rem;
-} */
 
 
 
