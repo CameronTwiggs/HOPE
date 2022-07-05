@@ -48,12 +48,16 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 
 
 app.get('/personSearch', (req, res) => {
+    console.log(req.body);
+    console.log(req.params)
     const obj = req.query
     console.log(obj);
     res.send("Hello World");
 });
 
 app.post("/personSearch", (req, res) => {
+    console.log(req.body);
+    console.log(req.params)
     const obj = req.body;
     console.log(obj.name, obj.juris, obj);
     res.end();
