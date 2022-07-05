@@ -1,3 +1,4 @@
+import {fetch} from "node-fetch";
 const MongoClient = require('mongodb').MongoClient;
 const cors = require("cors")
 const bodyParser = require("body-parser")
@@ -53,6 +54,7 @@ app.get('/personSearch', (req, res) => {
     fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=1&per_page=10`, thirdPartyOptions)
     .then (res => res.json())
     .then (data => {
+        console.log(data)
         res.send(data);
     })
 });
