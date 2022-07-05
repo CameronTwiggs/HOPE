@@ -18,10 +18,11 @@ headers: {
 
 
 async function searchPerson(name, juris) {
-        const data = await fetch(`https://v3.openstates.org/people?jurisdiction=${juris}&name=${name}&page=1&per_page=10`, thirdPartyOptions);
-        const json = await data.json();
-        console.log(json);
-        res.send(json);
+        fetch(`https://v3.openstates.org/people?jurisdiction=${juris}&name=${name}&page=1&per_page=10`, thirdPartyOptions)
+        .then(res => res.json())
+        .then(data => {
+            res.send(data);
+        })
 }
 
 app.use(cors());
