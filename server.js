@@ -50,5 +50,5 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 app.get('/personSearch', (req, res) => {
     const obj = req.query
     console.log(obj);
-    searchPerson(obj.name, obj.juris);
+    
 });
