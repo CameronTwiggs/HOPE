@@ -49,6 +49,10 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 
 app.get('/personSearch', (req, res) => {
     console.log(req);
-    // searchPerson(req.body.name, req.body.jurs);
+    res.setHeader(200).json({"message": "success"});
 });
 
+app.post("/personSearch", (req, res) => {
+    console.log(req);
+    res.setHeader(200).json({"message": "success"});
+});
