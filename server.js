@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const cors = require("cors")
 const bodyParser = require("body-parser")
+const fetch = require('node-fetch');
 // starts express server
 const express = require('express');
 const app = express();
