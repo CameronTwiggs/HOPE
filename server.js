@@ -1,4 +1,4 @@
-import {fetch} from "node-fetch";
+const {fetch} = require("node-fetch");
 const MongoClient = require('mongodb').MongoClient;
 const cors = require("cors")
 const bodyParser = require("body-parser")
