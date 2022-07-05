@@ -10,6 +10,7 @@ const port = process.env.PORT|| 8080;
 const thirdPartyOptions = {
 headers: {
         'Content-Type': 'application/json',
+        "access-control-allow-origin": "*",
         'Accept': 'application/json',
         "X-API-KEY" : process.env.APIKEY
     }
