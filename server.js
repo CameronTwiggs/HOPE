@@ -4,6 +4,7 @@ const bodyParser = require("body-parser")
 
 // starts express server
 const express = require('express');
+const { request } = require('https');
 const app = express();
 const port = process.env.PORT|| 8080;
 
@@ -49,6 +50,9 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 
 app.get('/personSearch', (req, res) => {
     const obj = req.query
-    console.log(obj);
-    
+    fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=1&per_page=10`, thirdPartyOptions)
+    .then (res => res.json())
+    .then (data => {
+        res.send(data);
+    })
 });
