@@ -54,7 +54,7 @@ app.get('/personSearch', (req, res) => {
     console.log(req.params)
     const obj = req.query
     console.log(obj);
-    res.status(200).send();
+    res.status(200).json({"message": "success"});
 });
 
 app.post("/personSearch", (req, res) => {
