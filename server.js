@@ -6,6 +6,24 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT|| 8080;
 
+const thirdPartyOptions = {
+    header: {
+        "x-api-key": process.env.APIKEY,
+    }
+}
+
+
+async function searchPerson(name, jurs) {
+    try {
+        const data = await fetch(`https://v3.openstates.org/people?jurisdiction=${jurs}&name=${name}&page=1&per_page=10`, thirdPartyOptions);
+        const json = await data.json();
+        console.log(json);
+        res.send(json);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -28,14 +46,6 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 
 app.post('/personSearch', (req, res) => {
     console.log(req.body);
-    try {
-        const data = await fetch(`https://v3.openstates.org/people?jurisdiction=${jurisdiction}&name=${name}&page=1&per_page=10`);
-        const json = await data.json();
-        console.log(json);
-        res.send(json);
-    } catch (error) {
-        console.log(error);
-    }
-    
-
+    searchPerson(req.body.name, req.body.jurs);
 });
+
