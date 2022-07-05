@@ -23,10 +23,8 @@ async function getRepInfo() {
             <p>Name : ${repName}</p>
             <p>Jurisdiction : ${repJuris}</p>
             <p>Party : ${repParty}</p> 
-            <p>Role : ${repRole.title || "unknown"}</p> 
+            <p>Role : ${repRole.title || "N/A"}</p> 
             <p>Email : ${email}</p>
-
-
             `;
             repList.appendChild(repListItem);
         }
