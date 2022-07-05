@@ -17,13 +17,6 @@ headers: {
 }
 
 
-async function searchPerson(name, juris) {
-        fetch(`https://v3.openstates.org/people?jurisdiction=${juris}&name=${name}&page=1&per_page=10`, thirdPartyOptions)
-        .then(res => res.json())
-        .then(data => {
-            res.send(data);
-        })
-}
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -50,7 +43,7 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
 app.get('/personSearch', (req, res) => {
     const obj = req.query
     console.log(obj);
-    fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=1&per_page=10`, thirdPartyOptions)
+    fetch (`https://v3.openstates.org/people?jurisdiction=${obj.juris}&name=${obj.name}&page=${obj.page}&per_page=10`, thirdPartyOptions)
     .then (res => res.json())
     .then (data => {
         console.log(data)
