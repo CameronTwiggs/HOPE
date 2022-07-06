@@ -37,6 +37,7 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
     console.log("Connected to database :D :D :D :D ");
     const db = client.db('hopehacks');
     const collection = db.collection('listings');
+    const contactsCollection = db.collection('contacts');
    
     app.get('/data', (req, res) => {
         collection.find().toArray()
@@ -46,9 +47,15 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
     });
 
     app.post('/contacts', (req, res) => {
+        db.collection('contacts').insert(req.body, (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                res.redirect('back');
+            }
+        })
         console.log(req.body);
-        console.log(req.query)
-        console.log(req.params)
     });
     
 
