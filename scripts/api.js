@@ -33,3 +33,31 @@ async function getRepInfo() {
     .catch(error => console.log(error));
 }
 
+async function getBillInfo() {
+    let bill = document.querySelector(".inpBillName").value;
+    let endpoint = `https://hopehacksapi.herokuapp.com/billSearch/?bill=${bill}`;
+    fetch(endpoint)
+    .then(response => response.json())
+    .then(data => {
+        let billInfo = data.results;
+        let billList = document.querySelector(".billList");
+        billList.innerHTML = "";
+        billInfo.forEach(bill => {
+            const billTitle = bill.title;
+            const billSummary = bill.summary;
+            const billDate = bill.date;
+            const billLink = bill.link;
+
+            let billListItem = document.createElement("li");
+            billListItem.innerHTML = `
+            <p>Title : ${billTitle}</p>
+            <p>Summary : ${billSummary}</p>
+            <p>Date : ${billDate}</p>
+            <p>Link : ${billLink}</p>
+            `;
+            billList.appendChild(billListItem);
+        }
+        )
+    })
+    .catch(error => console.log(error));
+}
