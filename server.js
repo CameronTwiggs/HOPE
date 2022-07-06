@@ -47,17 +47,15 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
     });
 
     app.post('/contacts', (req, res) => {
-        db.collection('contacts').insert(req.body, (err, result) => {
-            if (err) {
-                console.log(err);
-            }
-            else {
-                res.redirect('back');
-            }
-        })
+        db.collection('contacts').insertOne(req.body)
         console.log(req.body);
     });
-    
+
+    app.get('/contacts', (req, res) => {
+        contactsCollection.find().toArray()
+        .then (docs => {
+            res.send(docs);
+        });
 
 });
 
