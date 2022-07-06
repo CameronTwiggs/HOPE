@@ -76,7 +76,7 @@ app.get('/personSearch', (req, res) => {
 
 app.get('/billSearch', (req, res) => {
     const obj = req.query
-    fetch(`https://api.propublica.org/congress/v1/bills/search.json?query=${obj.name}`, proPublicAPIOptions)
+    fetch(`https://api.propublica.org/congress/v1/bills/search.json?query=${obj.bill}`, proPublicAPIOptions)
     .then (res => res.json())
     .then (data => {
         console.log(data)
