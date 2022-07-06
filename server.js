@@ -44,9 +44,13 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
             res.send(docs);
         });
     });
+
+    app.post('/data', (req, res) => {
+        
+    });
+    
+
 });
-
-
 
 
 app.get('/personSearch', (req, res) => {
