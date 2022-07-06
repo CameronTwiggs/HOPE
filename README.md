@@ -53,11 +53,11 @@ Database - MongoDB <====> Backend/1stAPI - Heroku ("backend" branch) <====> Fron
 
 Notes go here
 
-### Backend/1stAPI - Heroku (Cameron)
+### Backend/API - Heroku (Cameron)
 
-Notes go here
+Api used are OPENStates and ProPublica.
 
-### Frontend/3rdAPI - Amplify (Kesu & Peter)
+### Frontend - Amplify (Kesu & Peter)
 
 Notes go here
 

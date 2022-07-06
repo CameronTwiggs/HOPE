@@ -11,6 +11,12 @@ body {
   color: #000;
   font-family: "Times New Roman", Times, serif;
 }
+h1 {
+  color: #ff6663;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
 
 /* centers: title, search bar, search button) */
 header {
@@ -64,6 +70,7 @@ header {
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
 }
 
 /* navbar links hover color */
