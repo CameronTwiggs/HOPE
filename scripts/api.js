@@ -47,16 +47,19 @@ async function getBillInfo() {
             const billSummary = bill.summary;
             const billDate = bill.introduced_date;
             const billActive = bill.active ? "Active" : "Inactive";
-            const billCommittee = bill.committees;
+            const billCommittee = bill.committees ?  bill.committees : "N/A";
             const billSponsorState = bill.sponsor_state;
+            const billSponsorParty = bill.sponsor_party;
             let billListItem = document.createElement("li");
             billListItem.innerHTML = `
-            <p>Title : ${billTitle}</p>
-            <p>Summary : ${billSummary}</p>
-            <p>Date : ${billDate}</p>
-            <p>Active : ${billActive}</p>
+            <p>Bill Title : ${billTitle}</p>
+            <p>Bill Summary : ${billSummary}</p>
+            <p>Date Introduced : ${billDate}</p>
+            <p>Bill Status : ${billActive}</p>
             <p>Committee : ${billCommittee}</p>
             <p>Sponsor State : ${billSponsorState}</p>
+            <p>Sponsor Party : ${billSponsorParty}</p>
+            
             `;
             billList.appendChild(billListItem);
         }
