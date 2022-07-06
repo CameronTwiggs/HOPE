@@ -178,3 +178,19 @@ h1 {
   top: 7px;
   right: 15px;
 }
+
+
+.repList li, .billList li {
+  border: solid white 1px;
+  margin: 1em;
+}
+
+.repList li p, .billList li p {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
