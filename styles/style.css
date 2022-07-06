@@ -25,10 +25,7 @@ header{
   border: 2px solid #fff;
   background: url('../images/homeimg/freeBR3.jpg') no-repeat center center/cover;
   transition: all 1s ease-in-out;
-<<<<<<< HEAD
   opacity: 1;
-=======
->>>>>>> Bellul
 }
 /* positioning of our nav outline*/
 header nav{
@@ -45,15 +42,11 @@ header nav h3{
   color: gray;
   font-size: 24px; 
   font-family: fantasy;
-<<<<<<< HEAD
   text-shadow: 0px 3px 0px #b2a98f,
                  0px 14px 10px rgba(0,0,0,0.15),
                  0px 24px 2px rgba(0,0,0,0.1),
                  0px 34px 30px rgba(0,0,0,0.1);
    /* text-shadow:
-=======
-   text-shadow:
->>>>>>> Bellul
         0.05em 0 black,
         0 0.05em black,
         -0.05em 0 black,
@@ -61,29 +54,19 @@ header nav h3{
         -0.05em -0.05em black,
         -0.05em 0.05em black,
         0.05em -0.05em black,
-<<<<<<< HEAD
         0.05em 0.05em black; */
-=======
-        0.05em 0.05em black;
->>>>>>> Bellul
 }
 header nav h3 span{
   color: gray;
   font-size: 40px; 
   font-family: fantasy;
-<<<<<<< HEAD
   text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-=======
->>>>>>> Bellul
 }
 header nav h3 span{
   color: #fff;
 }
-<<<<<<< HEAD
 
 /* make nav bar aligned to center */
-=======
->>>>>>> Bellul
 header nav ul{
   width: auto;
   height: 100%;
@@ -94,18 +77,12 @@ header nav ul{
 /*   border: black;
   transform: uppercase; */
 }
-<<<<<<< HEAD
 /* how our tabs are spaced */
-=======
->>>>>>> Bellul
 header nav ul li{
   list-style-type: none;
   padding: 3px 10px;
 }
-<<<<<<< HEAD
 /* our nav tabs sizing as well as shadow to make more visible, set our transition  */
-=======
->>>>>>> Bellul
 header nav ul li a{
   text-decoration: none;
    color: #fff;
@@ -124,18 +101,12 @@ header nav ul li a{
         0.05em -0.05em black,
         0.05em 0.05em black;
 }
-<<<<<<< HEAD
 /* hover color effect */
 header nav ul li a:hover{
   color: gray;
 }
  
 /* setion out our area for our menu bar */
-=======
-header nav ul li a:hover{
-  color: gray;
-}
->>>>>>> Bellul
 header nav .menu{
   width: 30px;
   height: 100%;
@@ -146,11 +117,8 @@ header nav .menu{
   flex-direction: column;
   padding-top: 13px;
 }
-<<<<<<< HEAD
 
 /* divides our menu button by targeting span */
-=======
->>>>>>> Bellul
 header nav .menu span{
   width: 30px;
   height: 4px;
@@ -159,11 +127,8 @@ header nav .menu span{
   border-radius: 10px;
   cursor: not-allowed;
 }
-<<<<<<< HEAD
 
 /* set our different lines in menu tab */
-=======
->>>>>>> Bellul
 header nav .menu span:nth-child(2){
   width: 25px;
   height: 3px;
@@ -172,11 +137,8 @@ header nav .menu span:nth-child(3){
   width: 20px;
   height: 2px;
 }
-<<<<<<< HEAD
 /* 
 our area to play around with home page display, make it close to maximum keep previous paramters in mind */
-=======
->>>>>>> Bellul
 header section{
   width: 90%;
   height:91%;
@@ -187,10 +149,7 @@ header section{
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
 /* divide our set up page in half to easily divvy up our areas to place text */
-=======
->>>>>>> Bellul
 header section .sec1,.sec2{
   width: 50%;
   height: 100%;
@@ -204,24 +163,16 @@ header section .sec1{
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 /* our read more small about us section */
 header section .sec1,.sec2 .top_sec{
   margin-top: 60px;
 }
 /* read more edits, set line-height for spacing */
 header section .sec1,.sec2 .top_sec h5{
-=======
-header section .sec1,.sec2,.top_sec{
-  margin-top: 60px;
-}
-header section .sec1,.sec2,.top_sec h5{
->>>>>>> Bellul
   color: #fff;
   font-size: 21px;
   font-weight: 600;
   line-height: 1rem;
-<<<<<<< HEAD
 }
 /* our read me edits, take our the underline and set its margin  */
 header section .sec1 .top_sec a{
@@ -241,62 +192,31 @@ header section .sec1 .top_sec h6{
   margin-top: 8px;
 }
 /* once clicked effect */
-=======
-  
-}
-header section .sec1 .top_sec a{
-  color: #fff;
-  font-size: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  margin: 5px 0px;
-  
-}
-header section .sec1 .top_sec h6{
-  position: relative;
-  width: 165px;
-  height: 2px;
-  background: #fff;
-}
->>>>>>> Bellul
 header section .sec1 .top_sec h6::before{
   position: absolute;
   content: '';
   width: 165px;
   height: 2px;
-<<<<<<< HEAD
   background: rgb(185,185,185,.1);
   top: 0;
 }
 
 /* main title area */
-=======
-  background: rgb(185,185,185,.5);
-  top: 0;
-}
->>>>>>> Bellul
 header section .sec1 .middle_sec{
   margin-top: 50px;
   color: #fff;
 }
-<<<<<<< HEAD
 /* title edits */
-=======
->>>>>>> Bellul
 header section .sec1 .middle_sec h3{
   font-size: 24px; 
   font-weight: 600;
   letter-spacing: 2px;
 }
-<<<<<<< HEAD
 /* make our main title, which comes second pop out a little more */
-=======
->>>>>>> Bellul
 header section .sec1 .middle_sec h1{
   font-size: 50px; 
   font-weight: 900;
   line-height: 50px;
-<<<<<<< HEAD
   text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -312,9 +232,6 @@ header section .sec1 .middle_sec h1{
 }
 /* 
 our edits for possible video source */
-=======
-}
->>>>>>> Bellul
 header section .sec1 .end1{
 /*  border: 1px solid #fff; */
   margin-top: 50px;
@@ -334,11 +251,7 @@ header section .sec1 .end1 .bx::before{
   position: absolute;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
    background: rgb(185,185,185,.5);
-=======
-   background: rgb(185,185,185,.1);
->>>>>>> Bellul
   backdrop-filter: blur(1px);
   z-index: -1;
 }
@@ -359,11 +272,7 @@ header section .sec1 .end1 .bx h6{
   font-weight: 600; 
  
 }
-<<<<<<< HEAD
  /* set up our area for socail links */
-=======
-
->>>>>>> Bellul
 header section .sec1 .end2{
   color: #fff;
   margin-bottom: 10px;
@@ -374,7 +283,6 @@ header section .sec1 .end2{
   align-items: center;
   justify-content: space-between;
 }
-<<<<<<< HEAD
 
 header section .sec1 .end2 li{
   list-style-type: none;
@@ -383,14 +291,6 @@ header section .sec1 .end2 li{
   
 }
 /* once clicked let it rotate  */
-=======
-header section .sec1 .end2 li{
-  list-style-type: none;
-  padding: 5px 10px 5px 0px;
-  transition: all 3s ease-in-out;
-  
-}
->>>>>>> Bellul
 header section .sec1 .end2 li:hover{
   transform: rotateZ(360deg);
   
@@ -400,10 +300,7 @@ header section .sec2{
   display: flex;
 }
 
-<<<<<<< HEAD
 /* we divide our sections into three to easily space out our content */
-=======
->>>>>>> Bellul
 header section .sec2 .first, .second, .third{
   width: 33.3%;
   height: 100%;
@@ -412,11 +309,8 @@ header section .sec2 .first, .second, .third{
   font-weight: 600;
   color: #fff;
 }
-<<<<<<< HEAD
 
 /* for second potential title before list */
-=======
->>>>>>> Bellul
 header section .sec2 .first h6{
   font-size: 13px;
   text-align: end;
@@ -427,7 +321,6 @@ header section .sec2 .second h6{
   text-align: end;
   margin: 100px;
 }
-<<<<<<< HEAD
 /* main list change weight, spreads out */
 header section .sec2 .second h6 span{
  font-weight: 400;
@@ -436,18 +329,10 @@ header section .sec2 .second h6 span{
 header section .sec2 .second h5{
 font-size: 18px;
 color: #FF6663;
-=======
-header section .sec2 .second h6 span{
- font-weight: 400;
-}
-header section .sec2 .second h5{
-font-size: 18px;
->>>>>>> Bellul
   text-align: end;
   margin-top: 30px;
   line-height: 2rem;
     text-shadow:
-<<<<<<< HEAD
         0.04em 0 black,
         0 0.04em black,
         -0.07em 0 black,
@@ -468,14 +353,6 @@ header section .sec2 .second h7{
     
   }
 /* main list change weight, spreads out */
-=======
-        0.07em 0 black,
-        0 0.07em black,
-        -0.07em 0 black,
-        0 -0.07em black;
-  
-}
->>>>>>> Bellul
 header section .sec2 .second h5 span{
  font-weight: 400;
 }
@@ -483,32 +360,23 @@ header section .sec2 .second h5 span{
  font-size: 11px;
   padding: 10px 0px;
 } */
-<<<<<<< HEAD
 
 /* allows our sidebar line to get pushed to edge of border */
-=======
->>>>>>> Bellul
 header section .sec2 .third {
  display: flex; 
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
 }
-<<<<<<< HEAD
 
 /* stretch sidebar line out  */
-=======
->>>>>>> Bellul
 header section .sec2 .third h5{
   position: relative;
   width: 3px;
   height: 99px;
   margin-right: 4px
 }
-<<<<<<< HEAD
 /* give it the fullt length, but its still stuck in side we need to push it */
-=======
->>>>>>> Bellul
 header section .sec2 .third h5::before{
   position: absolute;
   content: '';
@@ -516,24 +384,15 @@ header section .sec2 .third h5::before{
   height: 99px;
   background: rgb(185,185,185,.5);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> Bellul
 header section .sec2 .third h5 span{
   position: absolute;
   width: 3px;
   height: 33px;
   background: white; 
-<<<<<<< HEAD
   transition: all 1s ease-in-out;
 }
 
 /* making our final box at the bottom, we set up our height and width as pefered and make it centered easy to read */
-=======
-  transition: all .1s ease-in-out;
-}
->>>>>>> Bellul
 header .last_bx{
   position: absolute;
   width: 70%;
@@ -547,10 +406,7 @@ header .last_bx{
   align-content: center;
   justify-content: space-between;
 }
-<<<<<<< HEAD
 /* our items inside box edits */
-=======
->>>>>>> Bellul
 header .last_bx li{
   list-style-type: none;
   color: #fff;
@@ -559,10 +415,7 @@ header .last_bx li{
   cursor: pointer;
   transition: all .1s ease-in-out;
   
-<<<<<<< HEAD
   
-=======
->>>>>>> Bellul
 }
 header .last_bx li:hover{
  color: grey;
