@@ -197,6 +197,19 @@ body,input,textarea {
     font-family: "Poppins", sans-serif;
   }
   
+
+  input[type=text] {
+    color:black;
+    font: 1em/1.25em Arial, Helvetica, sans-serif;
+}
+
+input::placeholder, textarea::placeholder{
+    color:black;
+    font: 1em/1.25em Arial, Helvetica, sans-serif;
+}
+
+
+
 /* shifts container to center of page */
 .container {
     position: relative;
