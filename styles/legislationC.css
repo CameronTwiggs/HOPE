@@ -1,90 +1,89 @@
-
 body {
-    font-family: 'Times New Roman',Times,serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* reduces textbox size of "What is your plan?", centers title, page background color, page font type */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: white;
-    color: #000;
-    font-family: 'Times New Roman',Times,serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: white;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* centers: title, search bar, search button) */
 header {
-    /* padding for spacing above and below header */
-    padding: 2rem 1rem;
-    /* max-width limits content width to defined extent */
-    max-width: 800px;
-    /* margin centers header */
-    margin: 0 auto;
+  /* padding for spacing above and below header */
+  padding: 2rem 1rem;
+  /* max-width limits content width to defined extent */
+  max-width: 800px;
+  /* margin centers header */
+  margin: 0 auto;
 }
 
 /* user input area(Search your area) */
 #new-task-input {
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    background: rgb(234, 234, 234);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  background: rgb(234, 234, 234);
 }
 
 /* search button */
 #new-task-submit {
-    padding: 1rem;
-    border-radius: 1rem;
-    font-size: 1.25rem;
-    cursor: pointer;
-    background: green;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: green;
 }
 
 /* hovering over (Search) button shifts opacity */
 #new-task-submit:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* clicking submit (Search) button shifts opacity */
 #new-task-submit:active {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 /* Style the navbar */
 #navbar {
-    overflow: hidden;
-    background-color: #333;
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* Navbar links */
 #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
 /* navbar links hover color */
 li a:hover:not(.active) {
-    background-color: #111;
+  background-color: #111;
 }
-  
+
 /* Page content */
 .content {
-    padding: 16px;
+  padding: 16px;
 }
-  
+
 /* sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-  
+
 /* Add some top padding to the page content to prevent sudden quick movement */
 .sticky + .content {
-    padding-top: 60px;
+  padding-top: 60px;
 }

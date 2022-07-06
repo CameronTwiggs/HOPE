@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill Search</title>
-    <link rel="stylesheet" href="../styles/representitives.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="./legislation.html">LEGISLATION</a></li>
-            <li><a href="./representitives.html">REPRESENTATIVES</a></li>
-            <li><a href="./contact.html">RESOURCES</a></li>
-            <li><a href="./test.html">Test</a></li>
-        </nav>
-    </header>
-    <input class="inpBillName" type="text"  name="name" placeholder="Search by a name!">
-    <input class="inpBillPage" type="text"  name="page" placeholder="Page Number">
-    <button onclick="getBillInfo();">Search</button>
-    <ul class="billList">
+    <link rel="stylesheet" href="../styles/representitives.css" />
+  </head>
 
-    </ul>
-</body>
-<script src="../scripts/api.js"></script>
+  <body>
+    <header>
+      <nav>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./legislation.html">LEGISLATION</a></li>
+        <li><a href="./representitives.html">REPRESENTATIVES</a></li>
+        <li><a href="./contact.html">RESOURCES</a></li>
+        <li><a href="./test.html">Test</a></li>
+      </nav>
+    </header>
+    <input
+      class="inpBillName"
+      type="text"
+      name="name"
+      placeholder="Search by a name!"
+    />
+    <input
+      class="inpBillPage"
+      type="text"
+      name="page"
+      placeholder="Page Number"
+    />
+    <button onclick="getBillInfo();">Search</button>
+    <ul class="billList"></ul>
+  </body>
+  <script src="../scripts/api.js"></script>
 </html>

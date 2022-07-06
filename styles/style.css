@@ -1,52 +1,51 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box
- }
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
 
 /* set the body to align our content centered */
-body{
-    width: 100%;
-    height: 108vh;
-    background: #2b2b2b;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+body {
+  width: 100%;
+  height: 108vh;
+  background: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* set our box and outline */
-header{
+header {
   position: relative;
   width: 85%;
   height: 85%;
   border: 2px solid #fff;
-  background: url('../images/homeimg/freeBR3.jpg') no-repeat center center/cover;
+  background: url("../images/homeimg/freeBR3.jpg") no-repeat center center/cover;
   transition: all 1s ease-in-out;
   opacity: 1;
 }
 /* positioning of our nav outline*/
-header nav{
+header nav {
   width: 90%;
   height: 9%;
   margin: auto;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header nav h3{
+header nav h3 {
   color: gray;
-  font-size: 24px; 
+  font-size: 24px;
   font-family: fantasy;
-  text-shadow: 0px 3px 0px #b2a98f,
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 24px 2px rgba(0,0,0,0.1),
-                 0px 34px 30px rgba(0,0,0,0.1);
-   /* text-shadow:
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15),
+    0px 24px 2px rgba(0, 0, 0, 0.1), 0px 34px 30px rgba(0, 0, 0, 0.1);
+  /* text-shadow:
         0.05em 0 black,
         0 0.05em black,
         -0.05em 0 black,
@@ -56,61 +55,55 @@ header nav h3{
         0.05em -0.05em black,
         0.05em 0.05em black; */
 }
-header nav h3 span{
+header nav h3 span {
   color: gray;
-  font-size: 40px; 
+  font-size: 40px;
   font-family: fantasy;
-  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
-header nav h3 span{
+header nav h3 span {
   color: #fff;
 }
 
 /* make nav bar aligned to center */
-header nav ul{
+header nav ul {
   width: auto;
   height: 100%;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-/*   border: black;
+  /*   border: black;
   transform: uppercase; */
 }
 /* how our tabs are spaced */
-header nav ul li{
+header nav ul li {
   list-style-type: none;
   padding: 3px 10px;
 }
 /* our nav tabs sizing as well as shadow to make more visible, set our transition  */
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
-   color: #fff;
+  color: #fff;
   font-family: "system-ui";
   font-size: 11px;
   font-weight: bold;
-  transition: all .3s ease-in-out;
-/*   justify-content: space-between; */
-   text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
+  transition: all 0.3s ease-in-out;
+  /*   justify-content: space-between; */
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 /* hover color effect */
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: gray;
 }
- 
+
 /* setion out our area for our menu bar */
-header nav .menu{
+header nav .menu {
   width: 30px;
   height: 100%;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -119,7 +112,7 @@ header nav .menu{
 }
 
 /* divides our menu button by targeting span */
-header nav .menu span{
+header nav .menu span {
   width: 30px;
   height: 4px;
   background: #fff;
@@ -129,20 +122,20 @@ header nav .menu span{
 }
 
 /* set our different lines in menu tab */
-header nav .menu span:nth-child(2){
+header nav .menu span:nth-child(2) {
   width: 25px;
   height: 3px;
 }
-header nav .menu span:nth-child(3){
+header nav .menu span:nth-child(3) {
   width: 20px;
   height: 2px;
 }
 /* 
 our area to play around with home page display, make it close to maximum keep previous paramters in mind */
-header section{
+header section {
   width: 90%;
-  height:91%;
-/*   border: 1px solid #fff; */
+  height: 91%;
+  /*   border: 1px solid #fff; */
   margin: auto;
   display: flex;
   align-items: center;
@@ -150,13 +143,14 @@ header section{
 }
 
 /* divide our set up page in half to easily divvy up our areas to place text */
-header section .sec1,.sec2{
+header section .sec1,
+.sec2 {
   width: 50%;
   height: 100%;
-/*   border: 1px solid #fff; */
-  font-family: 'Poppins', 'sans-serif';
+  /*   border: 1px solid #fff; */
+  font-family: "Poppins", "sans-serif";
 }
-header section .sec1{
+header section .sec1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -164,18 +158,20 @@ header section .sec1{
 }
 
 /* our read more small about us section */
-header section .sec1,.sec2 .top_sec{
+header section .sec1,
+.sec2 .top_sec {
   margin-top: 60px;
 }
 /* read more edits, set line-height for spacing */
-header section .sec1,.sec2 .top_sec h5{
+header section .sec1,
+.sec2 .top_sec h5 {
   color: #fff;
   font-size: 21px;
   font-weight: 600;
   line-height: 1rem;
 }
 /* our read me edits, take our the underline and set its margin  */
-header section .sec1 .top_sec a{
+header section .sec1 .top_sec a {
   color: #fff;
   font-size: 17px;
   font-weight: 600;
@@ -184,7 +180,7 @@ header section .sec1 .top_sec a{
 }
 
 /* lets create a line under our read me */
-header section .sec1 .top_sec h6{
+header section .sec1 .top_sec h6 {
   position: relative;
   width: 30px;
   height: 2px;
@@ -192,71 +188,64 @@ header section .sec1 .top_sec h6{
   margin-top: 8px;
 }
 /* once clicked effect */
-header section .sec1 .top_sec h6::before{
+header section .sec1 .top_sec h6::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 165px;
   height: 2px;
-  background: rgb(185,185,185,.1);
+  background: rgb(185, 185, 185, 0.1);
   top: 0;
 }
 
 /* main title area */
-header section .sec1 .middle_sec{
+header section .sec1 .middle_sec {
   margin-top: 50px;
   color: #fff;
 }
 /* title edits */
-header section .sec1 .middle_sec h3{
-  font-size: 24px; 
+header section .sec1 .middle_sec h3 {
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 2px;
 }
 /* make our main title, which comes second pop out a little more */
-header section .sec1 .middle_sec h1{
-  font-size: 50px; 
+header section .sec1 .middle_sec h1 {
+  font-size: 50px;
   font-weight: 900;
   line-height: 50px;
-  text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
 }
 /* 
 our edits for possible video source */
-header section .sec1 .end1{
-/*  border: 1px solid #fff; */
+header section .sec1 .end1 {
+  /*  border: 1px solid #fff; */
   margin-top: 50px;
 }
-header section .sec1 .end1 .bx{
-position: relative;
+header section .sec1 .end1 .bx {
+  position: relative;
   width: 130px;
   height: 70px;
-/*   background: orange; */
+  /*   background: orange; */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
 }
-header section .sec1 .end1 .bx::before{
-  content: '';
+header section .sec1 .end1 .bx::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-   background: rgb(185,185,185,.5);
+  background: rgb(185, 185, 185, 0.5);
   backdrop-filter: blur(1px);
   z-index: -1;
 }
 
-header section .sec1 .end1 .bx .bi{
+header section .sec1 .end1 .bx .bi {
   font-size: 20px;
   color: #fff;
   border: 2px solid #fff;
@@ -265,96 +254,85 @@ header section .sec1 .end1 .bx .bi{
   margin: 0px 10px 0px 100px;
 }
 
-header section .sec1 .end1 .bx h6{
- color: #fff;
+header section .sec1 .end1 .bx h6 {
+  color: #fff;
   font-size: 7px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600; 
- 
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
- /* set up our area for socail links */
-header section .sec1 .end2{
+/* set up our area for socail links */
+header section .sec1 .end2 {
   color: #fff;
   margin-bottom: 10px;
-/*   border: 1px solid #fff; */
-  display: flex; 
+  /*   border: 1px solid #fff; */
+  display: flex;
   width: 100px;
-  
+
   align-items: center;
   justify-content: space-between;
 }
 
-header section .sec1 .end2 li{
+header section .sec1 .end2 li {
   list-style-type: none;
   /* padding: 5px 10px 5px 0px; */
   transition: all 3s ease-in-out;
-  
 }
 /* once clicked let it rotate  */
-header section .sec1 .end2 li:hover{
+header section .sec1 .end2 li:hover {
   transform: rotateZ(360deg);
-  
 }
 
-header section .sec2{
+header section .sec2 {
   display: flex;
 }
 
 /* we divide our sections into three to easily space out our content */
-header section .sec2 .first, .second, .third{
+header section .sec2 .first,
+.second,
+.third {
   width: 33.3%;
   height: 100%;
-/*   border: 1px solid #fff; */
-  font-family: 'Poppins', sans-serif;
+  /*   border: 1px solid #fff; */
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #fff;
 }
 
 /* for second potential title before list */
-header section .sec2 .first h6{
+header section .sec2 .first h6 {
   font-size: 13px;
   text-align: end;
   margin: 100px;
 }
-header section .sec2 .second h6{
-   font-size: 9px;
+header section .sec2 .second h6 {
+  font-size: 9px;
   text-align: end;
   margin: 100px;
 }
 /* main list change weight, spreads out */
-header section .sec2 .second h6 span{
- font-weight: 400;
+header section .sec2 .second h6 span {
+  font-weight: 400;
 }
 /* specify positioning and add shadows for more visibility, line height for spacing */
-header section .sec2 .second h5{
-font-size: 18px;
-color: #FF6663;
+header section .sec2 .second h5 {
+  font-size: 18px;
+  color: #ff6663;
   text-align: end;
   margin-top: 30px;
   line-height: 2rem;
-    text-shadow:
-        0.04em 0 black,
-        0 0.04em black,
-        -0.07em 0 black,
-        0 -0.04em black;
-  
+  text-shadow: 0.04em 0 black, 0 0.04em black, -0.07em 0 black, 0 -0.04em black;
 }
-header section .sec2 .second h7{
+header section .sec2 .second h7 {
   font-size: 18px;
-  color:#2D82B7;
-    text-align: end;
-    margin-top: 30px;
-    line-height: 2rem;
-      text-shadow:
-          0.04em 0 black,
-          0 0.04em black,
-          -0.07em 0 black,
-          0 -0.04em black;
-    
-  }
+  color: #2d82b7;
+  text-align: end;
+  margin-top: 30px;
+  line-height: 2rem;
+  text-shadow: 0.04em 0 black, 0 0.04em black, -0.07em 0 black, 0 -0.04em black;
+}
 /* main list change weight, spreads out */
-header section .sec2 .second h5 span{
- font-weight: 400;
+header section .sec2 .second h5 span {
+  font-weight: 400;
 }
 /* header section .sec2 .third h6{
  font-size: 11px;
@@ -363,37 +341,37 @@ header section .sec2 .second h5 span{
 
 /* allows our sidebar line to get pushed to edge of border */
 header section .sec2 .third {
- display: flex; 
+  display: flex;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
 }
 
 /* stretch sidebar line out  */
-header section .sec2 .third h5{
+header section .sec2 .third h5 {
   position: relative;
   width: 3px;
   height: 99px;
-  margin-right: 4px
+  margin-right: 4px;
 }
 /* give it the fullt length, but its still stuck in side we need to push it */
-header section .sec2 .third h5::before{
+header section .sec2 .third h5::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 99px;
-  background: rgb(185,185,185,.5);
+  background: rgb(185, 185, 185, 0.5);
 }
-header section .sec2 .third h5 span{
+header section .sec2 .third h5 span {
   position: absolute;
   width: 3px;
   height: 33px;
-  background: white; 
+  background: white;
   transition: all 1s ease-in-out;
 }
 
 /* making our final box at the bottom, we set up our height and width as pefered and make it centered easy to read */
-header .last_bx{
+header .last_bx {
   position: absolute;
   width: 70%;
   height: 30px;
@@ -407,16 +385,14 @@ header .last_bx{
   justify-content: space-between;
 }
 /* our items inside box edits */
-header .last_bx li{
+header .last_bx li {
   list-style-type: none;
   color: #fff;
   font-size: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
-  transition: all .1s ease-in-out;
-  
-  
+  transition: all 0.1s ease-in-out;
 }
-header .last_bx li:hover{
- color: grey;
+header .last_bx li:hover {
+  color: grey;
 }
