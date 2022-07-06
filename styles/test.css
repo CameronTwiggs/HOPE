@@ -17,7 +17,7 @@ header{
 }
 
 /* format of lists */
-ul, ol {
+.timeline ul, ol {
     list-style: none;
 }
 
@@ -139,7 +139,7 @@ body {
 
 /* first image */
 .timeline ul li:nth-child(1)::before {
-    background-image: url(./images/homeimg/freeBR3.jpg);
+    background-image: url(../images/homeimg/freeBR3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,7 +147,7 @@ body {
 
 /* second image */
 .timeline ul li:nth-child(2)::before {
-    background-image: url(./images/contactimg/unitybg.jpg);
+    background-image: url(../images/contactimg/unitybg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -155,7 +155,7 @@ body {
 
 /* third image */
 .timeline ul li:nth-child(3)::before {
-    background-image: url(./images/aboutusimg/legislation.jpeg);
+    background-image: url(../images/aboutusimg/legislation.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -163,7 +163,7 @@ body {
 
 /* fourth image */
 .timeline ul li:nth-child(4)::before {
-    background-image: url(./images/aboutusimg/representatives.jpeg);
+    background-image: url(../images/aboutusimg/representatives.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -171,7 +171,7 @@ body {
 
 /* fifth image */
 .timeline ul li:nth-child(5)::before {
-    background-image: url(./images/aboutusimg/stand.jpg);
+    background-image: url(../images/aboutusimg/stand.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -179,7 +179,7 @@ body {
 
 /* sixth image */
 .timeline ul li:nth-child(6)::before {
-    background-image: url(./images/aboutusimg/demand.jpeg);
+    background-image: url(../images/aboutusimg/demand.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
