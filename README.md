@@ -20,26 +20,26 @@ Lets start things all the way from the top,
 - [x] Database
   - [x] Hosted?
   - [x] Connected to backend?
-- [ ] Backend
+- [x] Backend
   - [x] Hosted?
   - [x] Connected to database?
   - [x] Connected to frontend?
-  - [ ] CRUD Implamentation
-  - [ ] File Sturcture
+  - [x] CRUD Implamentation
+  - [x] File Sturcture
 - [ ] Frontend
-  - [ ] Styles Compleated?
-  - [ ] HTML Comlpleated?
-  - [ ] API Digest formated
-  - [ ] Database Queries
+  - [x] Styles Compleated?
+  - [x] HTML Comlpleated?
+  - [x] API Digest formated
+  - [x] Database Queries
   - [ ] BEM?
   - [x] File Sturcture
-- [ ] 3rd Party API
+- [x] 3rd Party API
   - [x] Key Access?
-  - [ ] into database?
-  - [ ] Displaying Properly into Frontend
-- [ ] 1st Party API
+  - [x] into database?
+  - [x] Displaying Properly into Frontend
+- [x] 1st Party API
   - [x] Connected to database
-  - [ ] Can anyone use it?
+  - [x] Posts to database
 
 The way we have the project layed out goes as follows.
 
