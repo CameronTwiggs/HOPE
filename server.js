@@ -47,7 +47,7 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
     });
     app.post('/contacts', (req, res) => {
         db.collection('contacts').insertOne(req.body)
-        res.redirect('/contacts');
+        res.redirect('back');
     });
 
     app.get('/contacts', (req, res) => {
