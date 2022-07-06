@@ -3,12 +3,12 @@ async function getRepInfo() {
     let name = document.querySelector(".inpRepName").value;
     let juris = document.querySelector(".inpRepJuris").value;
     let page = document.querySelector(".inpRepPage").value || 1;
+    let repList = document.querySelector(".repList")
     let endpoint = `https://hopehacksapi.herokuapp.com/personSearch/?name=${name}&juris=${juris}&page=${page}`;
     fetch(endpoint)
     .then(response => response.json())
     .then(data => {
         let repInfo = data.results;
-        let repList = document.querySelector(".repList");
         repList.innerHTML = "";
         repInfo.forEach(rep => {
             const repName = rep.name;
@@ -39,21 +39,16 @@ async function getBillInfo() {
     fetch(endpoint)
     .then(response => response.json())
     .then(data => {
-        let billInfo = data.results;
+        let billInfo = data.results[0].bills;
         let billList = document.querySelector(".billList");
         billList.innerHTML = "";
         billInfo.forEach(bill => {
             const billTitle = bill.title;
             const billSummary = bill.summary;
-            const billDate = bill.date;
-            const billLink = bill.link;
-
             let billListItem = document.createElement("li");
             billListItem.innerHTML = `
             <p>Title : ${billTitle}</p>
             <p>Summary : ${billSummary}</p>
-            <p>Date : ${billDate}</p>
-            <p>Link : ${billLink}</p>
             `;
             billList.appendChild(billListItem);
         }
