@@ -55,6 +55,7 @@ MongoClient.connect(process.env.MONGODB_URI , { useNewUrlParser: true }, (err, c
         .then (docs => {
             res.send(docs);
         });
+    });
 
 });
 
