@@ -45,10 +45,18 @@ async function getBillInfo() {
         billInfo.forEach(bill => {
             const billTitle = bill.title;
             const billSummary = bill.summary;
+            const billDate = bill.introduced_date;
+            const billActive = bill.active ? "Active" : "Inactive";
+            const billCommittee = bill.committees;
+            const billSponsorState = bill.sponsor_state;
             let billListItem = document.createElement("li");
             billListItem.innerHTML = `
             <p>Title : ${billTitle}</p>
             <p>Summary : ${billSummary}</p>
+            <p>Date : ${billDate}</p>
+            <p>Active : ${billActive}</p>
+            <p>Committee : ${billCommittee}</p>
+            <p>Sponsor State : ${billSponsorState}</p>
             `;
             billList.appendChild(billListItem);
         }
