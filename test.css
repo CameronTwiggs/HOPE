@@ -1,139 +1,189 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
-
-:root{
---color: #333; 
+/* formst of entire page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* border for entire site */
+header{
+    position: relative;
+    width: 85%;
+    height: 85%;
+    border: 2px solid #fff;
+}
+:root {
+    --color: #333;
+}
+
+/* format of lists */
+ul, ol {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* font and background color of page */
 body {
-  font-family: 'Red Hat Text', sans-serif;
-  width: 100%;
-    height: 108vh;
-    background: #2b2b2b;
+    background-color: grey;
+    color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center; 
-}
-header{
-  position: relative;
-  width: 85%;
-  height: 85%;
-  border: 2px solid #fff;
-  
+    justify-content: center;
 }
 
-.holder {
-  text-align: center;
-  color: var(--color);
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("../images/contactimg/marchbg.jpg");
-/*   background-image: url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"); */
-  background-size: cover;
-  background-position: center;
-  
-/*  this is where the magic happens:  */
-  background-attachment: fixed;
+/* moves text to center */
+.timeline {
+    padding: 0px 100px;
+    position: relative;
+    width: 100%;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
+.timeline ul li {
+    position: relative;
+    width: 50%;
 }
 
-
-
-a {
-  display: inline-block;
-  padding: 1em 3.5em;
-  background-color: var(--color);
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.3em;
-  font-weight: 700;
-  letter-spacing: .5px;
-  font-size: .875rem;
+.timeline:before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 4px;
+    background-color: #fff;
+    left: 50%;
+    top: 10%;
 }
 
-.blank,
-.other {
-  width: 100%;
-  min-height: 30vh;
-  background-color: var(--color);
+/* formats image and text left */
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
 }
 
-.second {
-  background-image: url("../images/contactimg/balletbg.jpg");
-/*   background-image:url("https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
-  background-attachment: fixed;
-  height: 1200px;
+/* formats image and text right */
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 1.6rem;
-  margin-top: 1em;
-  padding-bottom: 4%;
+/* padding from center for left side text, next to image */
+.timeline ul li:nth-child(odd) .content {
+    margin-right: 100px;
 }
 
-/* This is for the (KNOW YOUR RIGHTS) */
-/* format of (KNOW YOUR RIGHTS) & description */
-.display {
-  padding-left: 5%;
-  padding-right: 5%;
+/* padding from center for right side text, next to image */
+.timeline ul li:nth-child(even) .content {
+    margin-left: 100px;
 }
 
-/* This is for the (KNOW YOUR RIGHTS) */
-/* text spaceing between paragraphs (KNOW YOUR RIGHT) */
-.display p {
-  padding-bottom: 5%;
+/* line connecting the circles */
+.timeline ul::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.display > a {
-  margin-bottom: 2em;
+/* odd child circles */
+.timeline ul li:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    right: -79px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: 4px solid #fff;
 }
 
-.item {
-  display: flex;
-  max-width: 600px;
-  background-color: white;;
-  flex-direction: column;
-  align-items: center;
-  border-radius: .5em;
-  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+/* even child circles */
+.timeline ul li:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    left: -79px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: 4px solid #fff;
 }
 
-.img {
-  width: 90%;
-  height: 200px;
-  background-color: lightgrey;
-  background-size: cover;
-  background-position: center;
-  margin-top: 20px;
-  border-radius: .3em;;
+/* padding space below and above descriptions/circles */
+.content {
+    padding: 50px 0px;
 }
 
-.img-first {
-  background-image: url("../images/contactimg/");
+/* header text font */
+.content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
-
-
-.second {
-  flex-direction: row;
-  gap: 1.6em;
+/* description text font */
+.content p {
+    font-size: 14px;
 }
 
+/* first image */
+.timeline ul li:nth-child(1)::before {
+    background-image: url(./images/homeimg/freeBR3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* second image */
+.timeline ul li:nth-child(2)::before {
+    background-image: url(./images/contactimg/unitybg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* third image */
+.timeline ul li:nth-child(3)::before {
+    background-image: url(./images/aboutusimg/legislation.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* fourth image */
+.timeline ul li:nth-child(4)::before {
+    background-image: url(./images/aboutusimg/representatives.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* fifth image */
+.timeline ul li:nth-child(5)::before {
+    background-image: url(./images/aboutusimg/stand.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* sixth image */
+.timeline ul li:nth-child(6)::before {
+    background-image: url(./images/aboutusimg/demand.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* set defined page size */
 * {
@@ -568,6 +618,7 @@ header nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--color);
 }
 
 header nav h3{
@@ -645,3 +696,113 @@ header nav .menu span:nth-child(3){
   width: 20px;
   height: 2px;
 }
+
+/* positioning of our nav outline*/
+header nav{
+    width: 100%;
+    height: 9%;
+    margin: auto;
+  /*   border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+   
+  header nav h3{
+    color: gray;
+    font-size: 24px;
+    font-family: fantasy;
+    text-shadow: 0px 3px 0px #b2a98f,
+                   0px 14px 10px rgba(0,0,0,0.15),
+                   0px 24px 2px rgba(0,0,0,0.1),
+                   0px 34px 30px rgba(0,0,0,0.1);
+     /* text-shadow:
+          0.05em 0 black,
+          0 0.05em black,
+          -0.05em 0 black,
+          0 -0.05em black,
+          -0.05em -0.05em black,
+          -0.05em 0.05em black,
+          0.05em -0.05em black,
+          0.05em 0.05em black; */
+  }
+  header nav h3 span{
+    color: gray;
+    font-size: 40px;
+    font-family: fantasy;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  }
+  header nav h3 span{
+    color: #fff;
+  }
+   
+  /* make nav bar aligned to center */
+  header nav ul{
+    width: auto;
+    height: 100%;
+  /*   border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  /*   border: black;
+    transform: uppercase; */
+  }
+  /* how our tabs are spaced */
+  header nav ul li{
+    list-style-type: none;
+    padding: 3px 10px;
+  }
+  /* our nav tabs sizing as well as shadow to make more visible, set our transition  */
+  header nav ul li a{
+    text-decoration: none;
+     color: #fff;
+    font-family: "system-ui";
+    font-size: 11px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+  /*   justify-content: space-between; */
+     text-shadow:
+          0.05em 0 black,
+          0 0.05em black,
+          -0.05em 0 black,
+          0 -0.05em black,
+          -0.05em -0.05em black,
+          -0.05em 0.05em black,
+          0.05em -0.05em black,
+          0.05em 0.05em black;
+  }
+  /* hover color effect */
+  header nav ul li a:hover{
+    color: gray;
+  }
+  /* setion out our area for our menu bar */
+  header nav .menu{
+    width: 30px;
+    height: 100%;
+  /*   border: 1px solid #fff; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 13px;
+  }
+   
+  /* divides our menu button by targeting span */
+  header nav .menu span{
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin: 2px 0px;
+    border-radius: 10px;
+    cursor: not-allowed;
+  }
+   
+  /* set our different lines in menu tab */
+  header nav .menu span:nth-child(2){
+    width: 25px;
+    height: 3px;
+  }
+  header nav .menu span:nth-child(3){
+    width: 20px;
+    height: 2px;
+  }
