@@ -1,105 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
 
-:root{
---color: #333; 
+:root {
+  --color: #333;
 }
 
 body {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   width: 100%;
-    height: 108vh;
-    background: #2b2b2b;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+  height: 108vh;
+  background: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* set our box and outline to match*/
-header{
+header {
   position: relative;
   width: 85%;
   height: 85%;
   border: 2px solid #fff;
-/*   background: url('freeBR3.jpg')no-repeat center center/cover;
+  /*   background: url('freeBR3.jpg')no-repeat center center/cover;
   transition: all 1s ease-in-out; */
 }
 /* positioning of our nav outline*/
-header nav{
+header nav {
   width: 90%;
   height: 9%;
   margin: auto;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header nav h3{
+header nav h3 {
   color: gray;
-  font-size: 24px; 
+  font-size: 24px;
   font-family: fantasy;
-   text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
-header nav h3 span{
+header nav h3 span {
   color: gray;
-  font-size: 40px; 
+  font-size: 40px;
   font-family: fantasy;
 }
-header nav h3 span{
+header nav h3 span {
   color: #fff;
 }
 /* make nav bar aligned to center */
-header nav ul{
+header nav ul {
   width: auto;
   height: 100%;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-/*   border: black;
+  /*   border: black;
   transform: uppercase; */
 }
 /* how our tabs are spaced */
-header nav ul li{
+header nav ul li {
   list-style-type: none;
   padding: 3px 10px;
 }
 /* our nav tabs sizing as well as shadow to make more visible, set our transition  */
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
-   color: #fff;
+  color: #fff;
   font-family: "system-ui";
   font-size: 11px;
   font-weight: bold;
-  transition: all .3s ease-in-out;
-/*   justify-content: space-between; */
-   text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em black,
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
+  transition: all 0.3s ease-in-out;
+  /*   justify-content: space-between; */
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 /* hover color effect */
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: gray;
 }
 
 /* setour area for our menu bar */
-header nav .menu{
+header nav .menu {
   width: 30px;
   height: 100%;
-/*   border: 1px solid #fff; */
+  /*   border: 1px solid #fff; */
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -108,7 +96,7 @@ header nav .menu{
 }
 
 /* divides our menu button by targeting span */
-header nav .menu span{
+header nav .menu span {
   width: 30px;
   height: 4px;
   background: #fff;
@@ -117,28 +105,27 @@ header nav .menu span{
   cursor: not-allowed;
 }
 /* set our different lines in menu tab */
-header nav .menu span:nth-child(2){
+header nav .menu span:nth-child(2) {
   width: 25px;
   height: 3px;
 }
-header nav .menu span:nth-child(3){
+header nav .menu span:nth-child(3) {
   width: 20px;
   height: 2px;
 }
 
 /* make our main title, then the second should pop out a little more */
-.container .middle_sec h3{
-  font-size: 24px; 
+.container .middle_sec h3 {
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #fff;
-  
 }
-.container .middle_sec h1{
-  font-size: 50px; 
+.container .middle_sec h1 {
+  font-size: 50px;
   font-weight: 900;
   line-height: 50px;
-   color: #fff;
+  color: #fff;
 }
 /* containing our first parrallax, keep background position displayed center using flex and set it to cover for tranisiton */
 .holder {
@@ -151,11 +138,11 @@ header nav .menu span:nth-child(3){
   align-items: center;
   justify-content: center;
   background-image: url("../images/aboutusimg/stand.jpg");
-/*   background-image: url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"); */
+  /*   background-image: url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"); */
   background-size: cover;
   background-position: center;
-  
-/*  this is where the magic happens:  */
+
+  /*  this is where the magic happens:  */
   background-attachment: fixed;
 }
 
@@ -164,45 +151,37 @@ h1 {
   font-weight: 700;
   font-size: 3rem;
   color: #fff;
-  text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 /* causing some problems but targets the link and text styles */
 .cardBT {
   display: inline-block;
   padding: 1em 3.5em;
-  background-color:#2D82B7;
+  background-color: #2d82b7;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 0.3em;
   font-weight: 700;
-  letter-spacing: .5px;
-  font-size: .875rem;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
 }
 .cardBT2 {
   display: inline-block;
   padding: 1em 3.5em;
-  background-color:#FF6663;
+  background-color: #ff6663;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 0.3em;
   font-weight: 700;
-  letter-spacing: .5px;
-  font-size: .875rem;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
 }
 /* this is the empty space we set in between our slide down the site */
 .blank,
@@ -215,7 +194,7 @@ h1 {
 lets set our second parrallax */
 .second {
   background-image: url("../images/aboutusimg/vote.jpg");
-/*   background-image:url("https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
+  /*   background-image:url("https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"); */
   background-attachment: fixed;
   height: 1200px;
 }
@@ -235,13 +214,13 @@ lets set our second parrallax */
 .item {
   display: flex;
   max-width: 320px;
-  background-color: white;;
+  background-color: white;
   flex-direction: column;
   align-items: center;
-  border-radius: .5em;
-  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
 }
 
 /* image inside of itme needs to be cover and center to be seen */
@@ -252,9 +231,8 @@ lets set our second parrallax */
   background-size: cover;
   background-position: center;
   margin-top: 20px;
-  border-radius: .3em;;
+  border-radius: 0.3em;
 }
-
 
 /* set the image for all of our cards */
 .img-first {
@@ -274,154 +252,149 @@ lets set our second parrallax */
   gap: 1.6em;
 }
 
-
-
-
-
-
 section {
-    position: relative;
+  position: relative;
 }
 
 /* pink circle properties */
 section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #2d3436;
-background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
-/*     background: linear-gradient(#f00,#f0f); */
-    clip-path: circle(30% at right 70%);
+  background-image: linear-gradient(315deg, #2d3436 0%, #1f0000 74%);
+  /*     background: linear-gradient(#f00,#f0f); */
+  clip-path: circle(30% at right 70%);
 }
 
 /* blue circle properties */
 section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-/*     background: linear-gradient(#2196f3,#e91e63); */
-    clip-path: circle(20% at 10% 10%);
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  /*     background: linear-gradient(#2196f3,#e91e63); */
+  clip-path: circle(20% at 10% 10%);
 }
 
 /* allows cards to display flex, also prevents blue circle from overlapping cards */
 .container {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
 
 /* properties of the cards which hold all other items */
 .container .card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: rgba(255,255,255,0.05);
-    margin: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    border-radius: 15x;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 /* centers all items in the card, except social media buttons */
 .container .card .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0.5;
-    transition: 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 /* photo image & name & description, transition effect on hover */
 .container .card:hover .content {
-    opacity: 1;
-    transform: translateY(-20px);
+  opacity: 1;
+  transform: translateY(-20px);
 }
 
 /* circle border for photo image */
 .container .card .content .imgBx {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 10px solid rgba(0,0,0,0.25);
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
 }
 
 /* centers photo for proper image */
 .container .card .content .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* properties for names and descriptions */
 .container .card .content .contentBx h3 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    margin: 20px 0 10px;
-    line-height: 1.1em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
 }
 
 /* font of descriptions */
 .container .card .content .contentBx h3 span {
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: initial;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
 }
 
 /* places social media buttons below description */
 .container .card .sci {
-    position: absolute;
-    bottom: 50px;
-    display: flex;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
 }
 
 /* properties of social media buttons */
 .container .card .sci li {
-    list-style: none;
-    margin: 0 10px;
-    transform: translateY(40px);
-    transition: 0.5s; 
-    opacity: 0;
-    transition-delay: calc(0.1s * var(--i));
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
 }
 
 /* brings up the social media buttons */
 .container .card:hover .sci li {
-    transform: translateY(0px);
-    opacity: 1;
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /* font size and color of social media buttons */
 .container .card .sci li a {
-    color: #fff;
-    font-size: 24px;
+  color: #fff;
+  font-size: 24px;
 }
 
 /* hover color on social media buttons */
 .container .card .sci li a:hover {
-    color: #2b2b2b;
+  color: #2b2b2b;
 }
