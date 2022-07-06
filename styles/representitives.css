@@ -186,6 +186,7 @@ h1 {
 
 .repList li p, .billList li p {
   color: #fff;
+  padding: .5em 1em;
 }
 
 ul {
