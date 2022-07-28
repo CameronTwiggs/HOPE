@@ -51,7 +51,7 @@ Heres the list of things I did in more detail, this also shows what I intended t
   - [x] Hosted?
   - [x] Styles Compleated?
     - [ ] Slider?
-      - [ ] Products?
+      - [x] Products?
       - [ ] Hero?
     - [x] Responsive?
         - [x] Navigation?
